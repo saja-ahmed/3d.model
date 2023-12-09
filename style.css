@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    color: grey;
+}
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 76px;
+    background: #f7f7f7;
+}
+header .logo img {
+    width: 100px;
+    height: 100px;
+}
+header ul {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f7f7f7;
+    padding: 0 60px;
+}
+/*  This is for styling the main container that holds everything */
+#container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: #f7f7f7;
+}
+
+
+
+/* This styles the descriptions of the 3D object */
+#content {
+    height:300px;
+    width: 700px;
+    position: absolute;
+    left: 6%;
+    top: calc(25%);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* This styles the heading in the 3D description */
+#content h2 {
+    font-size: 66px;
+    color: #25190a;
+}
+
+/* This styles the paragraph in the 3D description*/
+
+
+/* This styles the button in the 3D description*/
+#content button {
+    width: 35%;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin-top: 5vh;
+    margin-left: center;
+    border: none;
+    outline: none;
+    border-radius: 18px;
+    background: #44280d;
+    padding: 13px 0;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+}
+
+/* This adds some hover effects over the button */
+#content button:hover {
+    background: navy;
+}
+
+/* This styles the social media icons*/
+#icons {
+    height: 500px;
+    width: 140px;
+    background: none;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 250px);
+    display: flex;
+    align-items: center;
+    filter: drop-shadow(2px 2px 2px grey);
+}
+
+/* This styles the social media icons logos*/
+#icons #iconsLogo {
+    height: 300px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* This styles the social media icons logos images*/
+#icons #iconsLogo i {
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    margin: 10px;
+    color: grey;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+li,a {
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    color: #25190a;
+
+}
+
+#aSide {
+    height: 000px;
+    width: 600px;
+    position: absolute;
+    top: calc(50% - 250px);
+    right: 1%;
+}
+
+/* This styles the 3D object inserted in the aside container */
+#aSide model-viewer {
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: 0;
+    left:0px;
+    border: none;
+    z-index: 9999;
+}
